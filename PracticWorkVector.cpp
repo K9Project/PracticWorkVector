@@ -1,6 +1,4 @@
-#include <windows.h>
 #include <iostream>
-#include <vector>
 
 class Vector
 {
@@ -11,16 +9,17 @@ public:
     {}
     void Show()
     {
-        std::cout << "\n" << x << " " << y << " " << z << "\n";
+        std::cout << "\n " << x << " " << y << " " << z << "\n";
     }
+
 private:
-    double x = 0;
-    double y = 0;
-    double z = 0;
+    double x;
+    double y;
+    double z;
 };
     
 int main()
 {
-    Vector v;
+    Vector v(13,11,17);
     v.Show();
 }
